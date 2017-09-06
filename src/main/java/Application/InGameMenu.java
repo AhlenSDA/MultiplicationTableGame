@@ -1,6 +1,7 @@
 package Application;
 
 import GameMode.Mode_1;
+import GameMode.Mode_2;
 
 class InGameMenu {
 
@@ -19,7 +20,7 @@ class InGameMenu {
                     Mode_1.multiplyTwoInteger();
                     break;
                 case 2:
-                    // Method that starts game mode nr. 2
+                    Mode_2.multiplyTwoSpecifiedValues();
                     break;
                 case 3:
                     return; // return is the statement I use here to exit application, I did not want to use System.exit
