@@ -1,7 +1,8 @@
 package Application;
 
-import GameMode.Mode_1;
-import GameMode.Mode_2;
+
+import Game.Mode_1;
+import Game.Mode_2;
 
 class InGameMenu {
 

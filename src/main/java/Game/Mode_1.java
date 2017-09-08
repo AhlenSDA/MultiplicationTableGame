@@ -1,4 +1,4 @@
-package GameMode;
+package Game;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -33,6 +33,7 @@ public class Mode_1 {
                     attempt++;
                     score++;
                 } else
+                    System.out.println("Wrong! Try again!");
                     attempt++;
 
             } while ((userAnswer != multiplyResult) && (userAnswer != 0));
