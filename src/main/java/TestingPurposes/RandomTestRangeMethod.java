@@ -1,4 +1,4 @@
-package MetodaTestowaRandom;
+package TestingPurposes;
 
 import java.util.Random;
 
@@ -9,15 +9,9 @@ public class RandomTestRangeMethod {
         int minRange = 5;
         int maxRange = 10;
 
-
-       methodBy_StackOverFlow(minRange, maxRange);
+        methodBy_StackOverFlow(minRange, maxRange);
 
     }
-
-    // napisac warunek if ktory wskaze min i max w consoli
-    // sprawdzic dzialanie programu
-    // scommitowac i wyslac do Tadeusza z prosba o wylapanie bledow i wyeliminowanie zlych praktyk koderskich
-    // zrobic nowy projekt i sprobowac zrobic to samo ale z dziedziczeniem
 
     private static void methodBy_StackOverFlow(int minRange, int maxRange) {
 
@@ -25,6 +19,9 @@ public class RandomTestRangeMethod {
         int falseAttempt = 0;
         int maxValueCounter = 0;
         int minValueCounter = 0;
+
+        // sprawdzenie poprawnosci dzialania metody drawRandomNumbers poprzez wyszukanie
+        // najmniejszej i najwiekszej wartosci zadanego przedzialu liczbowego
 
         for (int i = 0; i < 1000; i++) {
 
