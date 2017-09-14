@@ -9,12 +9,6 @@ class CommonMethods {
     private static int score = 0;
     static int userAnswer;
 
-
-    static void showScore() {
-        double correctAnswers = Math.round(((double) score / (attempt - 1) * 100));
-        System.out.println("\nYour score is: " + score + "/" + (attempt - 1) + "\nCorrect answers: " + correctAnswers + "%");
-    }
-
     static void drawRandomNumbers(int minDrawnValue, int maxDrawnValue) {
 
         Random random = new Random();
@@ -35,4 +29,10 @@ class CommonMethods {
             }
         } while ((userAnswer != multiplyResult) && (userAnswer != 0));
     }
+
+    static void showScore() {
+        double correctAnswers = Math.round(((double) score / (attempt - 1) * 100));
+        System.out.println("\nYour score is: " + score + "/" + (attempt - 1) + "\nCorrect answers: " + correctAnswers + "%\n");
+    }
+
 }
