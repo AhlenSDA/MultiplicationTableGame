@@ -19,13 +19,10 @@ public class InGameMenu {
 
         System.out.print("\nChoose mode: ");
 
-        boolean exceptionFound = false;
         int userInput = 0;
 
-        // Jak napisac kod, zeby aplikacja po wylapaniu wyjatku przechodzila ponownie do wyboru MENU???
-
         do {
-            while (!exceptionFound) {
+            do {
                 try {
                     userInput = scanner.nextInt();
                     switch (userInput) {
@@ -42,12 +39,10 @@ public class InGameMenu {
                             System.out.print("Not found! Choose again game mode: ");
                     }
                 } catch (Exception InputMismatchException) {
-                    System.out.println("Wrong input!");
-                    exceptionFound = true;
+                    scanner.nextLine();
+                    System.out.print("Wrong input!\nChoose again: ");
                 }
-
-            }
-
-        } while (userInput <= 0 || userInput > 3) ;
+            } while (userInput <= 0 || userInput > 3);
+        } while (userInput != 3);
     }
 }
